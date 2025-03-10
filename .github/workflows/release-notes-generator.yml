@@ -36,7 +36,7 @@ jobs:
           echo "current_commit=$(curl https://api.github.com/repos/MystenLabs/sui/commits/${{ inputs.current_branch }} | jq .sha)" >> $GITHUB_ENV
 
       - name: Checkout main
-        uses: actions/checkout@b4ffde65f46336ab88eb53be808477a3936bae11 # Pin v4.1.1
+        uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # Pin v4.2.2
         with:
           fetch-depth: 0
           ref: main
